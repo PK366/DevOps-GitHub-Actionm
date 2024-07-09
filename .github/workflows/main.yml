@@ -22,7 +22,9 @@ jobs:
      job3:  #this is job name
        runs-on: ubuntu-latest # give the name of OS whre job will be executed
        steps:
-       - name: Execute set of command
-         run:
-          hostname -s
-           ls
+       - name: Execute set of commands
+         run: |
+          echo job3 execution
+          echo githubactions 
+
+
