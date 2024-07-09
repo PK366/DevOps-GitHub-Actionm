@@ -1,0 +1,16 @@
+#
+name: this is our first workflow
+# Trigger
+on:
+ push:
+   branches: ["main"]  
+ pull_request:
+   branches: ["main"]
+ workflow_dispatch: # execute by you manually
+jobs:
+     jobs1:  #this is job name
+      runs-on: ubuntu-latest # give the name of OS whre job will be executed
+      steps:
+       - name: Run a single command
+         run: echo hello world!
+ 
