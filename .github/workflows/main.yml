@@ -15,4 +15,14 @@ jobs:
          run: echo hello world!
        - name: Run a set of command
          run: echo hello world!  test
- 
+      jobs2:  #this is job name
+        runs-on: ubuntu-latest # give the name of OS whre job will be executed
+        steps:
+        -uses: actions/checkout@v4 it will clone  the current
+      jobs3:  #this is job name
+       runs-on: ubuntu-latest # give the name of OS whre job will be executed
+       steps:
+       - name: Execute set of command
+       run:
+        hostname -s
+        ls
