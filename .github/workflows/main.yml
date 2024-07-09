@@ -22,7 +22,6 @@ jobs:
        - uses: actions/checkout@v4 #it will clone  the current
      job3:  #this is job name
        runs-on: ubuntu-latest # give the name of OS whre job will be executed
-       needs: jobs2
        steps:
        - name: Execute set of commands
          run: |
