@@ -17,14 +17,17 @@ jobs:
          run: echo hello world!  test
      job2:  #this is job name
       runs-on: ubuntu-latest # give the name of OS whre job will be executed
+      needs: jobs1
       steps:
        - uses: actions/checkout@v4 #it will clone  the current
      job3:  #this is job name
        runs-on: ubuntu-latest # give the name of OS whre job will be executed
+       needs: jobs2
        steps:
        - name: Execute set of commands
          run: |
           echo job3 execution
           echo githubactions 
+      
 
 
