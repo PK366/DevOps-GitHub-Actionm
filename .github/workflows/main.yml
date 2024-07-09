@@ -13,4 +13,6 @@ jobs:
       steps:
        - name: Run a single command
          run: echo hello world!
+       - name: Run a set of command
+         run: echo hello world!  test
  
